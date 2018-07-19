@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation=
+        "http://java.sun.com/xml/ns/javaee 
+        http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+        version="2.5">
+        
+    <!-- <filter>
+  		<filter-name>EncodingFilter</filter-name>
+  		<filter-class>com.filter.EncodingFilter</filter-class>
+ 	 </filter>
+  	<filter-mapping>
+  		<filter-name>EncodingFilter</filter-name>
+  		<url-pattern>/*</url-pattern>
+  	</filter-mapping> -->
+  	
+  	<servlet>
+    	<servlet-name>Searchall</servlet-name>
+    	<servlet-class>servlets.SCServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+    	<servlet-name>studentinfolist</servlet-name>
+    	<servlet-class>servlets.StudentinfolistServlet.doPost</servlet-class>
+    </servlet>  
+        
+     <servlet>
+           <servlet-name>a</servlet-name>
+           <servlet-class>servlets.LoginServlet</servlet-class>
+     </servlet>
+        
+     <servlet-mapping>
+           <servlet-name>a</servlet-name>
+           <url-pattern>/LoginServlet</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+           <servlet-name>b</servlet-name>
+           <servlet-class>servlets.SCServlet</servlet-class>
+     </servlet>
+        
+     <servlet-mapping>
+           <servlet-name>b</servlet-name>
+           <url-pattern>/SCServlet</url-pattern>
+     </servlet-mapping>  
+     
+     <servlet>
+           <servlet-name>c</servlet-name>
+           <servlet-class>servlets.AddStuInfoServlet</servlet-class>
+     </servlet>
+        
+     <servlet-mapping>
+           <servlet-name>c</servlet-name>
+           <url-pattern>/AddStuIfo</url-pattern>
+     </servlet-mapping> 
+     
+     <servlet>
+           <servlet-name>d</servlet-name>
+           <servlet-class>servlets.AddScoreServlet</servlet-class>
+     </servlet>
+        
+     <servlet-mapping>
+           <servlet-name>d</servlet-name>
+           <url-pattern>/AddScore</url-pattern>
+     </servlet-mapping> 
+       
+     <servlet>
+           <servlet-name>e</servlet-name>
+           <servlet-class>servlets.UpdateStuServlet</servlet-class>
+     </servlet>
+        
+     <servlet-mapping>
+           <servlet-name>e</servlet-name>
+           <url-pattern>/UpdateStuIfo</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+           <servlet-name>f</servlet-name>
+           <servlet-class>servlets.DeleteStuServlet</servlet-class>
+     </servlet>
+        
+     <servlet-mapping>
+           <servlet-name>f</servlet-name>
+           <url-pattern>/DeleteStuInfo</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+           <servlet-name>g</servlet-name>
+           <servlet-class>servlets.UpdateScoreServlet</servlet-class>
+     </servlet>
+        
+     <servlet-mapping>
+           <servlet-name>g</servlet-name>
+           <url-pattern>/UpdateScore</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+           <servlet-name>h</servlet-name>
+           <servlet-class>servlets.DeleteScoreServlet</servlet-class>
+     </servlet>
+        
+     <servlet-mapping>
+           <servlet-name>h</servlet-name>
+           <url-pattern>/DeleteScore</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+           <servlet-name>i</servlet-name>
+           <servlet-class>servlets.StudentinfolistServlet</servlet-class>
+     </servlet>
+        
+     <servlet-mapping>
+           <servlet-name>i</servlet-name>
+           <url-pattern>/StuInfoList</url-pattern>
+     </servlet-mapping>
+     
+</web-app>
